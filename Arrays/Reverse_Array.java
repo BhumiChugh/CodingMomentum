@@ -21,20 +21,34 @@ public class Reverse_Array{
             System.out.print(arr[i]+" ");
         }
         System.out.println();
-        System.out.println("Storing reversed array:");
+        // System.out.println("Storing reversed array:");
         
-            for(int i=0;i<n/2;i++){
-                arr[i]+=arr[n-i-1];
-                arr[n-i-1]=arr[i]-arr[n-i-1];
-                arr[i]=arr[i]-arr[n-i-1];
-            }
+        //     for(int i=0;i<n/2;i++){
+        //         arr[i]+=arr[n-i-1];
+        //         arr[n-i-1]=arr[i]-arr[n-i-1];
+        //         arr[i]=arr[i]-arr[n-i-1];
+        //     }
         
 
-        System.out.println("Storing even sized reversed array: ");
+        // System.out.println("Storing even sized reversed array: ");
         
-        for(int i=0;i<n;i++){
-            System.out.print(arr[i]+" ");
+        // for(int i=0;i<n;i++){
+        //     System.out.print(arr[i]+" ");
+        // }
+
+        // two pointer technique
+        int i=0;
+        
+        int j=n-1;
+        while(i<j){
+            int temp= arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+            i++;
+            j--; 
         }
-
+        for(int k=0;k<n;k++){
+            System.out.print(arr[k]+" ");
+        }
     }
 }
