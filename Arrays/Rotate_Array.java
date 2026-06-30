@@ -18,7 +18,7 @@ public class Rotate_Array{
         System.out.print("Enter position from which you wish to rotate: ");
         int e=sc.nextInt();
 
-
+        e=e%n;
         int i=0;
         
         int j=e-1;
