@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Rotate_Array{
+public class Swap_FirstD_with_LastD{
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter array size: ");
@@ -23,7 +23,9 @@ public class Rotate_Array{
             arr[i]=arr[i]-arr[n-d+i];
         }
 
-        System.out.println("Array after some modifications:");
+
+
+        System.out.println("Array after swapping:");
         for(int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
         }
