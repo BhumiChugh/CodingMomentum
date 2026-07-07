@@ -21,7 +21,7 @@ public class Adding_one{
     
     while(true){
         sc.nextLine();
-        System.out.print("Do you wish to add more number? ");
+        System.out.print("Do you wish to add more number?(yes/no) ");
         String s=sc.nextLine();
 
         if(s.equalsIgnoreCase ("Yes") ){
@@ -33,16 +33,7 @@ public class Adding_one{
     }
     System.out.println("The ArrayList is before adding one: "+arr);
 
-    // for(int i=(arr.size()-1);i>0;i--){
-    //     if(arr.get(i)==9){
-    //         arr.set(i,0);
-    //         arr.set(i-1,arr.get(i-1)+1);
-    //     }   
-    // }
-    // if(arr.get(0)==9){
-    //     arr.set(0,1);
-    //     arr.set(1,0);
-    // }
+    
     int k= arr.size();
     
     int c=1;
