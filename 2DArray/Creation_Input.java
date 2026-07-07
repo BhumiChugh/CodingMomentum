@@ -20,6 +20,8 @@ public class Creation_Input{
         //     }
         // System.out.println();
         // }
+        
+        //method3
         System.out.print("Enter no. of rows in the array:");
         int r= sc.nextInt();
         System.out.print("Enter no. of columns in the array:");
