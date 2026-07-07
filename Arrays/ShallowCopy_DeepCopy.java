@@ -7,6 +7,7 @@ public class ShallowCopy_DeepCopy{
         System.out.println(arr[2]);
         x[2]=90;
         System.out.println(arr[2]);
+         System.out.println(x[2]);
         // In Shallow copy only a new or an extra name is given for the original array and this og array can be accsed or updated using these extra names
         // og array is arr
         // extra or another array name is x
